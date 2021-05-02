@@ -19,7 +19,7 @@ driver.implicitly_wait(3)
 def main():
     try:
         login(login_id, password)
-        post_article(blog_id, 'title', 'content', ['블챌', '하루일기'])
+        post_article(blog_id, 'title', 'content', ['블챌', '오늘일기'])
     finally:
         time.sleep(3)
         driver.close()
